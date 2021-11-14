@@ -1,0 +1,22 @@
+{
+    "name": "optiwariindia/auth",
+    "description": "Authenticate web application",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Om Prakash Tiwari",
+            "email": "optiwari.india@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "optiwariindia\\": "src/"
+        }
+    },
+    "require": {
+        "optiwariindia/database": "^1.2",
+        "ext-mysqlnd":"*",
+        "ext-mysqli":"*",
+        "php":">=7.0.0"
+    }
+}
