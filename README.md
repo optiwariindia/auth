@@ -20,32 +20,33 @@ Open your project directory and run following command
 `composer require optiwariindia/auth`
 ### Initialization
 
-`<?php `
+```
+<?php 
 
-`include "vendor/autoload.php";`
+include "vendor/autoload.php";
 
     //Please update Database details as per your database provider.
+$db=[
+    "host"=>"localhost",
+    "user"=>"root",
+    "pass"=>"",
+    "name"=>"authdb"
+];
 
-`$db=[`
-    `"host"=>"localhost",`
-    `"user"=>"root",`
-    `"pass"=>"",`
-    `"name"=>"authdb"`
-`];`
+optiwariindia\auth::config($db);
 
-`optiwariindia\auth::config($db);`
+optiwariindia\auth::init();
 
-`optiwariindia\auth::init();`
-
-`if(optiwariindia\auth::isLoggedIn()){`
+if(optiwariindia\auth::isLoggedIn()){
 
     //Action when user is logged in
 
-`}else{`
+}else{
 
     //Action when user is not logged in
 
-`}`
+} 
+```
 
 
 
