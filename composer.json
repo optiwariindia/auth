@@ -2,10 +2,14 @@
     "name": "optiwariindia/auth",
     "description": "Authenticate web application",
     "type": "project",
+    "version": "1.0.0",
+    "license":"GPL-3.0-or-later",
     "authors": [
         {
             "name": "Om Prakash Tiwari",
-            "email": "optiwari.india@gmail.com"
+            "email": "optiwari.india@gmail.com",
+            "role": "Developer",
+            "homepage": "https://about.me/omtiwari"
         }
     ],
     "autoload": {
